@@ -1,0 +1,10 @@
+{
+    "name": "john/php-mysql-nginx-react",
+    "authors": [
+        {
+            "name": "John Gaffney",
+            "email": "johngaffney132@gmail.com"
+        }
+    ],
+    "require": {}
+}

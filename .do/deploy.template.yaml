@@ -1,0 +1,24 @@
+spec:
+  name: sample-monorepo
+
+  static_sites:
+  - name: reactapp
+    environment_slug: html
+    git:
+      branch: main
+      repo_clone_url: https://github.com/jg132/sample-monorepo.git
+    source_dir: frontends/reactapp
+    index_document: hello.html
+    error_document: error.html
+    routes:
+    - path: /frontends/reactapp
+
+  services:
+  - name: api
+    environment_slug: go
+    git:
+      branch: main
+      repo_clone_url: https://github.com/jg132/sample-monorepo.git
+    source_dir: backends/api
+    routes:
+    - path: /backends/api
